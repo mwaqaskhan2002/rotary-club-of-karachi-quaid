@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.outline *{
+    border: 1px solid black;
+}
+
+
+/* <!-- Font --> */
+.inter-400 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.inter-500 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+.inter-600 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600 !important;
+    font-style: normal;
+}
+.inter-700 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+
+.dm-sans-300 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
+}
+
+.dm-sans-400 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.dm-sans-500 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+.dm-sans-600 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600 !important;
+    font-style: normal;
+}
+.dm-sans-700 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.montserrat-500 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+.montserrat-600 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600 !important;
+    font-style: normal;
+}
+.montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+
+
+/* <!-- Navbar --> */
+.top-navbar {
+    background-color: rgba(252, 248, 251, 1);
+    border-bottom: 1px solid rgba(195, 198, 209, 1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Centering Rules (Flex alignments fix karne ke liye) */
+.top-navbar .container-lg,
+.top-navbar .container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.top-navbar .navbar-brand {
+    margin-right: 0 !important;
+}
+
+.top-navbar .navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.nav-pill-wrapper {
+    background-color: rgba(23, 69, 143, 1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 135px;
+}
+
+.nav-pill-wrapper .nav-item {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
+.nav-pill-wrapper .nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-pill-wrapper .nav-link:hover {
+    color: rgba(247, 168, 27, 1) !important;
+}
+
+.btn-join-club {
+    background-color: rgba(247, 168, 27, 1) !important;
+    color: rgba(0, 36, 75, 1) !important;
+    font-size: 14px;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 43px;
+    display: inline-block;
+}
+
+.btn-join-club:hover {
+    background-color: rgba(230, 150, 20, 1) !important;
+    color: rgba(0, 36, 75, 1) !important;
+}
+
+@media (max-width: 991.98px) {
+    .nav-pill-wrapper {
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+
+    .btn-join-club {
+        align-self: center; 
+    }
+}
+/* <!-- Navbar --> */
+
+
+/* <!-- Home hero section --> */
+.homepage .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.homepage .hero-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.homepage .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Typography */
+.homepage .hero-title {
+    color: rgba(23, 69, 143, 1);
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    line-height: 1.2;
+}
+
+.homepage .hero-text {
+    color: rgba(67, 71, 80, 1);
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    line-height: 1.6;
+}
+
+/* Primary Blue Button (Explore Our Projects) */
+.btn-explore {
+    background-color: rgb(23, 69, 143) !important;
+    color: #ffffff !important;
+    border-radius: 53px !important;
+    font-size: 14px;
+    border: 1px solid rgb(23, 69, 143) !important;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.7px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.btn-explore:hover {
+    background-color: rgb(15, 50, 110) !important;
+    color: #ffffff !important;
+    border-color: rgb(15, 50, 110) !important;
+}
+
+/* Outline Play Button (Watch Video) */
+.btn-watch-video {
+    background-color: transparent !important;
+    color: rgb(23, 69, 143) !important;
+    border-radius: 53px !important;
+    font-size: 14px;
+    border: 1px solid rgba(115, 119, 129, 1) !important;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.7px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.btn-watch-video i {
+    color: rgb(23, 69, 143) !important;
+}
+
+.btn-watch-video:hover {
+    background-color: rgba(23, 69, 143, 0.08) !important;
+    border-color: rgb(23, 69, 143) !important;
+    color: rgb(23, 69, 143) !important;
+}
+
+/* <!-- Home hero section --> */
+
+/* <!-- Home Impact Metrics Section --> */
+.impact-metrics-section {
+    background-color: rgb(23, 69, 143);
+}
+
+.impact-metrics-section .stat-card {
+    background-color: transparent;
+    padding: 16px 20px;
+}
+
+.impact-metrics-section .stat-icon-circle {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    background-color: rgb(247, 168, 27);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.impact-metrics-section .stat-icon-img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.impact-metrics-section .stat-number {
+    color: rgba(255, 255, 255, 1);
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    letter-spacing: -0.95px;
+    line-height: 1.1;
+}
+
+.impact-metrics-section .stat-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    display: block;
+    margin-top: 4px;
+}
+
+@media (min-width: 992px) {
+    .impact-metrics-section .stat-col {
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .impact-metrics-section .stat-col:last-child {
+        border-right: none;
+    }
+}
+
+/* <!-- Home Impact Metrics Section --> */
+
+
+/* <!-- Recent Projects Section --> */
+.recent-projects-section{
+    background-color: rgba(246, 243, 245, 1);
+}
+.recent-projects-text-content h2{
+    color: rgba(0, 36, 75, 1);
+}
+
+.recent-projects-text-content p{
+    color: rgba(67, 71, 80, 1);
+}
+
+.cause-card-image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cause-card-img {
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.category-pill {
+    bottom: 16px;
+    left: 16px;
+    z-index: 10; 
+    background-color: rgba(247, 168, 27, 1) !important;
+    color: rgba(107, 69, 0, 1) !important;
+    font-size: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    line-height: 1;
+}
+/* <!-- Recent Projects Section --> */
+
+
+
+/* <!-- Core Focus Area Projects Section --> */
+.core-focus-area-section{
+    background-color: rgba(252, 248, 251, 1);
+}
+.core-focus-area-text-content h2{
+    color: rgba(0, 36, 75, 1);
+}
+
+.core-focus-area-text-content p{
+    color: rgba(67, 71, 80, 1);
+}
+
+/* Feature Card Container */
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(195, 198, 209, 1);
+    border-radius: 12px;
+    padding: 32px 28px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Light Blue Icon Box */
+.feature-card .icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(235, 240, 248, 1);
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+/* Icon Styling */
+.feature-card .icon-box i,
+.feature-card .icon-img {
+    color: rgba(23, 69, 143, 1);
+    font-size: 26px;
+    width: 28px;
+    height: 28px;
+}
+
+/* Card Heading */
+.feature-card .card-title {
+    color: #111827;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+}
+
+/* Card Text */
+.feature-card .card-text {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+/* <!-- Core Focus Area Projects Section --> */
+
+
+/* CTA Section Background & Spacing */
+.cta-section {
+    background-color: #03254c; /* Deep Dark Blue */
+}
+
+/* Heading Styling */
+.cta-section .cta-heading {
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+}
+
+/* Paragraph Text */
+.cta-section .cta-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+    line-height: 1.6;
+}
+
+/* Primary Yellow Button */
+.cta-section .btn-cta-primary {
+    background-color: #f7a81b;
+    color: #03254c;
+    border: 2px solid #f7a81b;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-cta-primary:hover {
+    background-color: #e09511;
+    border-color: #e09511;
+    color: #03254c;
+}
+
+/* Secondary Outlined Button */
+.cta-section .btn-cta-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn-cta-outline:hover {
+    background-color: #ffffff;
+    color: #03254c;
+    border-color: #ffffff;
+}
+
+
+/* Meeting Info Section */
+.meeting-info-section {
+    background-color: rgba(252, 248, 251, 1);
+}
+
+.meeting-info-section .handshake-icon-box {
+    flex-shrink: 0;
+}
+
+
+.meeting-info-section .meeting-title {
+    color: rgba(0, 36, 75, 1);
+    font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+}
+
+
+/* Vertical Thin Divider */
+.meeting-info-section .meeting-divider {
+    width: 1px;
+    height: 80px;
+    background-color: rgba(26, 70, 140, 0.22);
+    margin: 0 10px;
+}
+
+/* Right Side Text */
+.meeting-info-section .meeting-details p {
+    color: rgba(67, 71, 80, 1);
+    font-size: clamp(0.8125rem, 0.7589rem + 0.2679vw, 1rem);
+}
+
+
+/* <!-- Footer Section --> */
+
+.site-footer, .bottom-footer {
+    background-color: #03254c;
+}
+
+.site-footer .footer-heading {
+    color: rgba(254, 174, 35, 1) !important;
+    font-size: 24px;
+    /* letter-spacing: 0.2px; */
+}
+
+.site-footer .footer-text,
+.site-footer .footer-links a {
+    font-size: 16px;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer .footer-text a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer .footer-links a:hover,
+.site-footer .footer-text a:hover {
+    color: #ffffff !important;
+}
+
+.site-footer .social-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 30.72px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.site-footer .social-btn:hover {
+    background-color: #f7a81b;
+    color: #03254c !important;
+}
+
+.bottom-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bottom-footer .copyright-text {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.bottom-footer .copyright-text a{
+    color: rgba(255, 255, 255, 0.6);
+}
+.bottom-footer .copyright-text a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
