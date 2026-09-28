@@ -154,7 +154,7 @@
 }
 /* <!-- Navbar --> */
 
-
+/* <!------------------------------------ Home Page ---------------------------> */
 /* <!-- Home hero section --> */
 .homepage .hero-section {
     min-height: 80vh;
@@ -183,6 +183,7 @@
     color: rgba(23, 69, 143, 1);
     font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
     line-height: 1.2;
+
 }
 
 .homepage .hero-text {
@@ -469,8 +470,11 @@
     color: rgba(67, 71, 80, 1);
     font-size: clamp(0.8125rem, 0.7589rem + 0.2679vw, 1rem);
 }
+/* <!------------------------------------ Home Page End ---------------------------> */
 
 
+
+/* <!------------------------------------ Footer ---------------------------> */
 /* <!-- Footer Section --> */
 
 .site-footer, .bottom-footer {
@@ -528,4 +532,217 @@
 }
 .bottom-footer .copyright-text a:hover{
     color: rgba(255, 255, 255, 0.6);
+}
+/* <!------------------------------------ Footer End---------------------------> */
+
+
+
+
+/* Typography & Badges Styling */
+.leadership-hero-section .hero-title {
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    /* line-height: 1.2; */
+    color: white;
+}
+
+.leadership-hero-section .hero-text {
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    /* line-height: 1.6; */
+    /* max-width: 620px; */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.leadership-hero-section .custom-badge {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.02);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+
+/* <!-- Core Focus Area Projects Section --> */
+.leadership-section{
+    background-color: rgba(252, 248, 251, 1);
+}
+.leadership-section h2{
+    color: rgba(0, 36, 75, 1);
+}
+
+.leadership-section p{
+    color: rgba(67, 71, 80, 1);
+}
+
+
+/* Card Base Setup - Sabhi Cards Default White */
+.leadership-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f2f5;
+    border-radius: 8px;
+    /* height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    transition: all 0.35s ease-in-out;
+}
+
+/* Base Text Colors for Default Light Card */
+.leadership-card .member-name {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.45rem;
+    color: #0b2b5a;
+    transition: color 0.35s ease;
+}
+
+.leadership-card .member-designation {
+    color: #d89315;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.leadership-card .member-bio {
+    color: #6c757d;
+    font-size: 0.825rem;
+    line-height: 1.55;
+    transition: color 0.35s ease;
+}
+
+.leadership-card .tag-badge {
+    font-size: 0.75rem;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: #f1f5f9;
+    color: #0b2b5a;
+    transition: all 0.35s ease;
+}
+
+/* Circular Image Frame */
+.profile-img-box img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 3px solid #f7a81b;
+    padding: 3px;
+}
+
+/* Badges Default */
+.badge-gold {
+    background-color: #f7a81b;
+    color: #0b2b5a;
+    border-radius: 20px;
+    font-size: 0.725rem;
+}
+
+.badge-light-gold {
+    background-color: #fef6e6;
+    color: #d89315;
+    border-radius: 20px;
+    font-size: 0.725rem;
+    transition: all 0.35s ease;
+}
+
+.badge-outline {
+    background-color: transparent;
+    color: #0b2b5a;
+    border: 1px solid #0b2b5a;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.725rem;
+    transition: all 0.35s ease;
+}
+
+
+.leadership-card:hover {
+    background-color: #0b2b5a; /* Dark Navy Color */
+    border-color: #0b2b5a;
+    /* transform: translateY(-8px); */
+    box-shadow: 0 15px 35px rgba(11, 43, 90, 0.25);
+}
+
+/* Hover par Card Text/Headings Change */
+.leadership-card:hover .member-name {
+    color: #ffffff;
+}
+
+.leadership-card:hover .member-bio {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Hover par Skill Tags Change */
+.leadership-card:hover .tag-badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Hover par Badges Color Adjustments */
+.leadership-card:hover .badge-light-gold {
+    background-color: #f7a81b;
+    color: #0b2b5a;
+}
+
+.leadership-card:hover .badge-outline {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+}
+
+.cta-leadership-section{
+    background-color: rgba(252, 248, 251, 1);
+}
+
+/* CTA Banner Container Card */
+.cta-banner-card {
+    overflow: hidden;
+}
+
+/* Left Accent Gold Border Line */
+.cta-banner-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #f7a81b; /* Accent Gold */
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* Subheading / Kicker Label */
+.cta-subheading {
+    color: #b57a18;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+/* Title Typography */
+.cta-title {
+    color: #0b2b5a;
+    font-size: clamp(1.4rem, 2vw, 1.85rem);
+    
+}
+
+.cta-description {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/* Primary Navy Button Styling */
+.cta-leadership-section .btn-cta-navy {
+    background-color: #0b2b5a;
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.cta-leadership-section .btn-cta-navy:hover {
+    background-color: #153e77;
+    color: #ffffff;
+    /* transform: translateX(3px); */
+    box-shadow: 0 5px 15px rgba(11, 43, 90, 0.2);
+}
+
+.cta-leadership-section .btn-cta-navy i {
+    transition: transform 0.3s ease;
 }
