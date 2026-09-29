@@ -537,30 +537,30 @@
 
 
 
-/* <!------------------------------------ Leadership ---------------------------> */
+/* <!------------------------------------ Inner Page Hero Section ---------------------------> */
 /* Typography & Badges Styling */
-.leadership-hero-section .hero-title {
+.inner-page-hero-section .hero-title {
     font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
     /* line-height: 1.2; */
     color: white;
 }
 
-.leadership-hero-section .hero-text {
-    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
-    /* line-height: 1.6; */
-    /* max-width: 620px; */
-    color: rgba(255, 255, 255, 0.6);
+/* Custom Breadcrumb Styling */
+.inner-page-hero-section .custom-breadcrumb .breadcrumb-item {
+    font-size: 0.95rem;
+    color: white;
 }
 
-.leadership-hero-section .custom-badge {
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: rgba(255, 255, 255, 0.02);
-    font-size: 13px;
-    letter-spacing: 0.3px;
+/* Custom Separator '>' Icon */
+.inner-page-hero-section .custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #f7a81b; /* Gold/Orange Separator Color */
+
 }
+/* <!------------------------------------ Inner Page Hero Section End ---------------------------> */
 
+/* <!------------------------------------ Leadership ---------------------------> */
 
-/* <!-- Core Focus Area Projects Section --> */
 .leadership-section{
     background-color: rgba(252, 248, 251, 1);
 }
@@ -573,48 +573,28 @@
 }
 
 
-/* Card Base Setup - Sabhi Cards Default White */
+/* ==========================================
+   Leadership Card (Default Dark Navy Theme)
+   ========================================== */
+
+/* Card Base Setup - Default Dark Navy */
 .leadership-card {
-    background-color: #ffffff;
-    border: 1px solid #f0f2f5;
+    background-color: #0b2b5a; /* Dark Navy Color */
+    border: 1px solid #0b2b5a;
     border-radius: 8px;
-    /* height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
-    transition: all 0.35s ease-in-out;
+    box-shadow: 0 15px 35px rgba(11, 43, 90, 0.25);
 }
 
-/* Base Text Colors for Default Light Card */
+/* Member Name */
 .leadership-card .member-name {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.45rem;
-    color: #0b2b5a;
-    transition: color 0.35s ease;
+    font-size: 18px;
+    color: #ffffff; /* Default White */
 }
 
+/* Designation */
 .leadership-card .member-designation {
-    color: #d89315;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.leadership-card .member-bio {
-    color: #6c757d;
-    font-size: 0.825rem;
-    line-height: 1.55;
-    transition: color 0.35s ease;
-}
-
-.leadership-card .tag-badge {
-    font-size: 0.75rem;
-    padding: 5px 14px;
-    border-radius: 15px;
-    font-weight: 500;
-    background-color: #f1f5f9;
-    color: #0b2b5a;
-    transition: all 0.35s ease;
+    color: #f7a81b; /* Vibrant Gold for contrast on dark background */
+    font-size: 12px;
 }
 
 /* Circular Image Frame */
@@ -626,66 +606,40 @@
     padding: 3px;
 }
 
-/* Badges Default */
-.badge-gold {
+/* Profile Detail Redirect Button */
+.profile-detail-btn {
+    background-color: #f7a81b; /* Gold Background */
+    color: #0b2b5a; /* Dark Navy Text */
+    font-size: 13px;
+    border-radius: 50px;
+    border: 1px solid #f7a81b;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ==========================================
+   Badges Setup
+   ========================================== */
+   .top-badge-wrapper {
+    width: 100%;
+}
+
+.top-badge {
+    display: inline-block;
     background-color: #f7a81b;
     color: #0b2b5a;
-    border-radius: 20px;
-    font-size: 0.725rem;
-}
-
-.badge-light-gold {
-    background-color: #fef6e6;
-    color: #d89315;
-    border-radius: 20px;
-    font-size: 0.725rem;
-    transition: all 0.35s ease;
-}
-
-.badge-outline {
-    background-color: transparent;
-    color: #0b2b5a;
-    border: 1px solid #0b2b5a;
-    font-weight: 600;
+    font-size: 0.7rem;
+    /* letter-spacing: 0.5px; */
     padding: 6px 16px;
     border-radius: 20px;
-    font-size: 0.725rem;
-    transition: all 0.35s ease;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 
-.leadership-card:hover {
-    background-color: #0b2b5a; /* Dark Navy Color */
-    border-color: #0b2b5a;
-    /* transform: translateY(-8px); */
-    box-shadow: 0 15px 35px rgba(11, 43, 90, 0.25);
-}
-
-/* Hover par Card Text/Headings Change */
-.leadership-card:hover .member-name {
-    color: #ffffff;
-}
-
-.leadership-card:hover .member-bio {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-/* Hover par Skill Tags Change */
-.leadership-card:hover .tag-badge {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-}
-
-/* Hover par Badges Color Adjustments */
-.leadership-card:hover .badge-light-gold {
-    background-color: #f7a81b;
-    color: #0b2b5a;
-}
-
-.leadership-card:hover .badge-outline {
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #ffffff;
-}
 
 .cta-leadership-section{
     background-color: rgba(252, 248, 251, 1);
@@ -748,30 +702,139 @@
 }
 /* <!------------------------------------ Leadership End---------------------------> */
 
-/* <!------------------------------------ Contact Us ---------------------------> */
-.contact-us-hero-section .hero-title {
-    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
-    /* line-height: 1.2; */
+/* <!------------------------------------ Profile Detail Page ---------------------------> */
+
+/* Fixed Image Container Setup */
+.profile-img-container {
+    width: 100%;
+    min-height: 260px; /* Fixed Container Height for Desktop */
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #f4f6f9; /* Fallback background while loading */
+}
+
+/* Smart Image Cropping (Card Circle Image jaisa behavior) */
+.profile-detail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Aspect ratio retain karega aur space fill karega */
+    object-position: top center; /* Face features focus mein rakhega */
+    display: block;
+}
+
+
+.profile-detail-section {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Main Heading */
+.profile-main-title {
+    color: #0b2b5a; /* Dark Navy */
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    line-height: 1.2;
+}
+
+/* Subtitle/Lead Text */
+.profile-lead-text {
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Tagline */
+.profile-section-tagline {
+    color: #0b2b5a;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+}
+
+/* Paragraph Text Styling */
+.profile-description p {
+    color: #444444;
+    font-size: 0.925rem;
+    line-height: 1.65;
+}
+
+.profile-description strong {
+    color: #0b2b5a;
+}
+
+/* Left Image Caption & Dot */
+.caption-text {
+    font-size: 0.725rem;
+    color: #777777;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.caption-badge {
+    font-size: 0.75rem;
+    color: #d88e00;
+}
+
+.caption-badge .dot {
+    width: 7px;
+    height: 7px;
+    background-color: #f7a81b;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Extended Bio Link */
+.extended-bio-link {
+    color: #0b2b5a;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.extended-bio-link:hover {
+    color: #f7a81b;
+}
+
+/* Action Buttons */
+.btn-outline-navy {
+    color: #0b2b5a;
+    border: 2px solid #0b2b5a;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-navy:hover {
+    background-color: #0b2b5a;
+    color: #ffffff;
+}
+
+.btn-gold {
+    background-color: #f7a81b;
+    color: #0b2b5a;
+    border: 2px solid #f7a81b;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #e5970f;
+    border-color: #e5970f;
+    color: #0b2b5a;
+}
+
+.profile-detail-section .profile-action-btns a{
+    background-color: #f7a81b; /* Gold Background */
     color: white;
-}
-
-.contact-us-hero-section .hero-text {
-    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
-    /* line-height: 1.6; */
-    /* max-width: 620px; */
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contact-us-hero-section .custom-badge {
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: rgba(255, 255, 255, 0.02);
     font-size: 13px;
-    letter-spacing: 0.3px;
+    border-radius: 50px;
+    border: 1px solid #f7a81b;
+    transition: all 0.3s ease-in-out;
 }
+
+
+/* <!------------------------------------ Contact Us ---------------------------> */
+
 
 .contact-section{
     background-color: rgba(252, 248, 251, 1);
 }
+
 
 
 .contact-form label{
