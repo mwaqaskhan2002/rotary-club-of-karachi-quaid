@@ -20,7 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
-<body class="leadership-page">
+<body class="contact-page">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg top-navbar">
@@ -74,132 +74,171 @@
     <main>
         <!-- Home Page Hero Section -->
         <!-- Inner Page Hero Section -->
-        <section class="leadership-hero-section py-5 position-relative overflow-hidden">
+        <section class="contact-us-hero-section py-5 position-relative overflow-hidden">
             <!-- HTML Background Image Wrapper -->
             <div class="hero-bg-wrapper position-absolute top-0 start-0 w-100 h-100 z-0">
                 <img src="images/inner-page-hero-section1.jpg" alt="Leadership Background Pattern"
                     class="hero-bg-img object-fit-cover w-100 h-100">
             </div>
-        
+
             <!-- Main Content Grid over Background Image -->
             <div class="container py-2 py-sm-3 py-lg-4 position-relative z-1">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-10 col-lg-8">
-        
+
                         <!-- Responsive Display Heading (Bootstrap Display Class) -->
                         <h1 class="hero-title mb-2 mb-md-3 dm-sans-700">
-                            Leadership 
+                            Contact Us
                         </h1>
-        
+
                         <!-- Subtitle Text (Bootstrap Lead & Small Utilities) -->
                         <p class="hero-text mb-3 mb-md-4 inter-400">
-                            Meet the people who guide Rotary Club of Karachi Quaid, and the District 3271 leaders who inspire
-                            our service across Sindh.
+                            We welcome your inquiries, humanitarian partnership proposals, and questions. Reach out directly to our Secretariat or
+                            visit our weekly fellowship meeting in Karachi.
                         </p>
-        
-                        <!-- Badges (Bootstrap Badge Utility Classes) -->
-                        <div class="d-flex flex-wrap align-items-center gap-2">
-                            <span
-                                class="custom-badge badge px-2 px-sm-3 py-2 rounded-pill text-white inter-500">
-                                Rotary International District 3271
-                            </span>
-                            <span
-                                class="custom-badge badge px-2 px-sm-3 py-2 rounded-pill text-white inter-500">
-                                Service Above Self
-                            </span>
-                        </div>
-        
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="leadership-section container-fluid py-5">
-            <div class="container py-4">
-                <!-- Section Title & Subtitle -->
-                <div class="row mb-5">
-                    <div class="core-focus-area-text-content text-center">
-                        <h2 class="dm-sans-700">Our Leadership Team</h2>
-                        <p class="inter-400 text-muted">
-                            Business leaders and philanthropists committed to healthcare, education, clean water and community
-                            development
-                        </p>
-                    </div>
-                </div>
+        <!-- Contact & Correspondence Section -->
+        <section class="contact-section py-5 position-relative">
+            <div class="container py-lg-3">
+                <div class="row g-4 align-items-stretch">
         
-                <!-- Leadership Cards Grid -->
-                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-4 justify-content-center">
-        
+                    <!-- LEFT COLUMN: Contact Form Card -->
+                    <div class="col-lg-7">
+                        <div class="contact-form bg-white p-4 p-lg-5 sm h-100 position-relative">
                     
+                            <!-- Card Header -->
+                            <div class="d-flex align-items-start justify-content-between mb-4">
+                                <div>
+                                    <h2 class="section-title text-navy dm-sans-700 mb-2">Send Us a Message</h2>
+                                </div>
+                                <div class="header-icon-box bg-light-gold p-3 rounded-3 text-gold">
+                                    <i class="fa-regular fa-envelope-open fs-4"></i>
+                                </div>
+                            </div>
+                    
+                            <!-- Form Inputs Grid -->
+                            <form action="#" method="POST">
+                                <div class="row g-3">
+                    
+                                    <!-- First Name & Last Name -->
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">First Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="First name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Last Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="Last Name" required>
+                                    </div>
+                    
+                                    <!-- Email & Phone -->
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Email Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" class="form-control custom-input inter-400" placeholder="name@domain.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Phone Number</label>
+                                        <input type="tel" class="form-control custom-input inter-400" placeholder="Phone Number">
+                                    </div>
+                    
+                                    <!-- Country & District -->
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Country</label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="Pakistan">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Rotary District</label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="District 3271">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Club Name</label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="Club Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small montserrat-500">Subject <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control custom-input inter-400" placeholder="Subject" required>
+                                    </div>
+                    
+                                    <!-- Message Textarea -->
+                                    <div class="col-12">
+                                        <label class="form-label small inter-400">Comment or Question <span
+                                                class="text-danger">*</span></label>
+                                        <textarea class="form-control custom-input" rows="4"
+                                            placeholder="Please share details regarding your message, visit dates, or collaborative opportunity..."
+                                            required></textarea>
+                                    </div>
+                    
+                                    <!-- Submit Button -->
+                                    <div class="col-12 mt-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+                                        <button type="submit" class="submit-message-btn px-4 py-2 d-inline-flex align-items-center gap-2 inter-500">
+                                            <span>Submit Message</span>
+                                        </button>
+                                    </div>
+                    
+                                </div>
+                            </form>
+                    
+                        </div>
+                    </div>
         
-                    <!-- Card 1: PDG Muhammad Rizwan Adhia -->
-                    <div class="col">
-                        <div class="leadership-card d-flex flex-column justify-content-between h-100 text-center p-4">
-                            <div class="top-badge-wrapper mb-3">
-                                <span class="badge badge-gold montserrat-400">DISTRICT GOVERNOR 2024-25</span>
-                            </div>
-                        
-                            <div class="profile-img-box mb-3">
-                                <img src="images/rizwan-adhia.jpeg" alt="Rizwan Adhia" class="rounded-circle">
-                            </div>
-                        
-                            <h3 class="member-name mb-1">PDG M. Rizwan Adhia</h3>
-                            <p class="member-designation mb-3 dm-sans-700">Co-Chairman, Country Group Builders & Developers</p>
-                        
-                            <p class="member-bio mb-4 inter-400">
-                                COO of Giga Group Pakistan leading Goldcrest BaySands at HMR Waterfront. Brings 25+ years of UAE finance leadership,
-                                including raising USD 32B for Dubai Aviation City Corporation. President of Rotary Club of Karachi Quaid.
-                            </p>
-                        
+                    <!-- RIGHT COLUMN: Club Secretariat Office Info -->
+                    <div class="col-lg-5">
+                        <div class="contact-card bg-white p-4 p-md-5 rounded-4 shadow-sm position-relative">
+        
+                            <!-- Secretariat Header -->
                             
-                        </div>
-                    </div>
         
-                    <!-- Card 2: Nadeem Polani -->
-                    <div class="col">
-                        <div class="leadership-card d-flex flex-column justify-content-between h-100 text-center p-4">
-                            <div class="top-badge-wrapper mb-3">
-                                <span class="badge badge-gold montserrat-400">BOARD MEMBER & PATRON</span>
+                            <!-- <p class="text-secondary small inter-400 mb-4 border-bottom pb-3">
+                                The permanent administrative center managing Rotary Club of Karachi Quaid operations, community
+                                service initiatives, international district liaisons, and member correspondence.
+                            </p> -->
+        
+                            <!-- Address Block -->
+                            <div class="info-block d-flex gap-3 mb-4">
+                                <div class="info-icon-box bg-light-blue p-2.5 rounded-3 text-navy align-self-start">
+                                    <i class="fa-solid fa-location-dot fs-5"></i>
+                                </div>
+                                <div>
+                                    <span class="text-uppercase fw-bold text-muted fs-7 d-block mb-1">OFFICIAL ADDRESS</span>
+                                    <p class="fw-bold text-navy mb-1 fs-6">231, Muhammadi House, I.I.Chundrigar Road, Karachi – 74000</p>
+                                    <span class="text-muted small">Financial & Commercial District Center</span>
+                                </div>
                             </div>
-                        
-                            <div class="profile-img-box mb-3">
-                                <img src="images/nadeem-polani.jpeg" alt="" class="rounded-circle">
+        
+                            <!-- Phone Block -->
+                            <div class="info-block d-flex gap-3 mb-4">
+                                <div class="info-icon-box bg-light-blue p-2.5 rounded-3 text-navy align-self-start">
+                                    <i class="fa-solid fa-phone fs-5"></i>
+                                </div>
+                                <div>
+                                    <span class="text-uppercase fw-bold text-muted fs-7 d-block mb-1">DIRECT PHONE LINES</span>
+                                    <p class="text-navy mb-0">(9221) 3241-1458, 3246-0541</p>
+                                    <span class="text-muted">Fax: (92-21) 3242-2379</span>
+                                </div>
                             </div>
-                        
-                            <h3 class="member-name mb-1">Nadeem Polani</h3>
-                            <p class="member-designation mb-3 dm-sans-700">Chairman & Founder, Polson Group</p>
-                        
-                            <p class="member-bio mb-4 inter-400">
-                                District Governor 2024-25 (RID 3271) & Founder of RCK Quaid. Co-Chairman of Country Group with 40+ years in construction
-                                & clean energy. Led major Sindh water filtration projects & global polio eradication efforts.
-                            </p>
-                        
-                        </div>
-                    </div>
-
-
-                    <!-- Card 3: Adnan Saeed -->
-                    <div class="col">
-                        <div class="leadership-card d-flex flex-column justify-content-between h-100 text-center p-4">
-                            <div class="top-badge-wrapper mb-3">
-                                <span class="badge badge-gold montserrat-400">CLUB PRESIDENT</span>
+        
+                            <!-- Email Block -->
+                            <div class="info-block d-flex gap-3">
+                                <div class="info-icon-box bg-light-gold p-2.5 rounded-3 text-gold align-self-start">
+                                    <i class="fa-solid fa-at fs-5"></i>
+                                </div>
+                                <div>
+                                    <span class="text-uppercase fw-bold text-muted fs-7 d-block mb-1">OFFICIAL EMAIL
+                                        INBOXES</span>
+                                    <p class="text-navy mb-1">info@rck.org.pk</p>
+                                    <span class="text-muted small d-block">rotarykhi@gmail.com</span>
+                                    <span class="text-muted small d-block">info@rid3271.org</span>
+                                </div>
                             </div>
-                    
-                            <div class="profile-img-box mb-3">
-                                <img src="images/adnan-saeed.jpeg" alt="Adnan Saeed" class="rounded-circle">
-                            </div>
-                    
-                            <h3 class="member-name mb-1">Adnan Saeed</h3>
-                            <p class="member-designation mb-3 dm-sans-700">Chief Operating Officer, Giga Group Pakistan</p>
-                    
-                            <p class="member-bio mb-4 inter-400">
-                                Founder-Owner of Polson Group (since 1989), leading a Karachi conglomerate in textiles, food commodities,
-                                minerals,
-                                fashion, and real estate with a strong export footprint across Europe, North America, Middle East, and South
-                                Asia.
-                            </p>
-                    
-                    
+        
                         </div>
                     </div>
         
@@ -207,37 +246,7 @@
             </div>
         </section>
 
-        <section class="cta-leadership-section py-4 py-md-5">
-            <div class="container">
-                <div class="cta-banner-card bg-white position-relative p-4 p-md-5 rounded-4 shadow-sm border">
-                    <div class="row align-items-center gy-3">
         
-                        <!-- Text Content Left -->
-                        <div class="col-lg-8">
-                            <span class="cta-subheading text-uppercase fw-bold d-block mb-1">
-                                Connect with leadership
-                            </span>
-                            <h2 class="cta-title member-name text-navy mb-2">
-                                Want to work with our leadership?
-                            </h2>
-                            <p class="cta-description text-secondary mb-0 inter-400">
-                                Reach out about partnerships, donations or volunteering.
-                            </p>
-                        </div>
-        
-                        <!-- Button Right -->
-                        <div class="col-lg-4 text-lg-end">
-                            <a href="contact-us.html"
-                                class="btn btn-cta-navy rounded-pill px-4 py-3 fw-medium d-inline-flex align-items-center gap-2">
-                                <span>Contact Leadership</span>
-                                <i class="fa-solid fa-arrow-right fs-6"></i>
-                            </a>
-                        </div>
-        
-                    </div>
-                </div>
-            </div>
-        </section>
 
     </main>
 

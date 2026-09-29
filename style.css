@@ -537,7 +537,7 @@
 
 
 
-
+/* <!------------------------------------ Leadership ---------------------------> */
 /* Typography & Badges Styling */
 .leadership-hero-section .hero-title {
     font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
@@ -746,3 +746,91 @@
 .cta-leadership-section .btn-cta-navy i {
     transition: transform 0.3s ease;
 }
+/* <!------------------------------------ Leadership End---------------------------> */
+
+/* <!------------------------------------ Contact Us ---------------------------> */
+.contact-us-hero-section .hero-title {
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    /* line-height: 1.2; */
+    color: white;
+}
+
+.contact-us-hero-section .hero-text {
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    /* line-height: 1.6; */
+    /* max-width: 620px; */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-us-hero-section .custom-badge {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.02);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.contact-section{
+    background-color: rgba(252, 248, 251, 1);
+}
+
+
+.contact-form label{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #03254c;
+}
+
+/* ==========================================
+   Header Icon & Info Icon Boxes
+   ========================================== */
+.header-icon-box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon-box {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for squeezed focus ring / border highlight */
+.custom-input {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.875rem;
+    color: #0b2b5a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-input:focus {
+    background-color: #ffffff;
+    border-color: pink;
+    
+}
+
+.custom-input::placeholder {
+    color: #a0aec0;
+    font-size: 0.875rem;
+}
+
+.submit-message-btn {
+    background-color: #f7a81b;
+    color: #0b2b5a;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+
+
+/* <!------------------------------------Contact Us End---------------------------> */
